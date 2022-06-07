@@ -1,0 +1,134 @@
+.container {
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+    border-radius: 25px;
+    background-color: white;
+    width: 60vw;
+}
+
+.instructor__cont__mob {
+    position: relative;
+}
+
+.instructor__cont__desktop {
+    display: none;
+}
+
+.women {
+    position: absolute;
+    bottom: 30px;
+    width: var(--width-1);
+}
+
+.pattern {
+    width: var(--width-1);
+}
+
+.title__cont {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.queries__cont {
+    padding: 1em 1.5em 1.5em;
+}
+
+.queries__cont>* {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.query__cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.query__cont span {
+    font-size: var(--fs-1);
+}
+
+.query__cont>* {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.query {
+    transition: color 200ms ease-in-out;
+}
+
+.query:hover {
+    cursor: pointer;
+    color: var(--text-clr2);
+}
+
+.arrow__down {
+    cursor: pointer;
+}
+
+.arrow__up:not(span) {
+    transform: rotateX(180deg);
+}
+
+.answer {
+    margin-top: 1em;
+}
+
+.divider {
+    color: var(--clr-light);
+}
+
+
+@media (min-width: 950px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 50%;
+        margin-right: 2rem;
+    }
+
+    .title__cont {
+        padding: 1em 1.5em 0;
+        text-align: start;
+    }
+
+    .instructor__cont__mob {
+        display: none;
+    }
+
+    .instructor__cont__desktop {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+
+    .instructor__cont__desktop>* {
+        position: absolute;
+        top: 4rem;
+    }
+
+    .women__desktop {
+        height: 45vh;
+        height: 16rem;
+        left: -3rem;
+        top: 4rem;
+    }
+
+    .box__desktop {
+        top: 8rem;
+        left: -6rem;
+    }
+
+    .pattern__desktop {
+        height: 45rem;
+        top: -15rem;
+        left: -28rem;
+    }
+}
